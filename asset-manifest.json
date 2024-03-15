@@ -1,9 +1,8 @@
 {
   "files": {
     "main.css": "/Skipper-training-bouquet/static/css/main.67ff39bc.css",
-    "main.js": "/Skipper-training-bouquet/static/js/main.2bedd1a9.js",
+    "main.js": "/Skipper-training-bouquet/static/js/main.11a99676.js",
     "static/media/curved10.jpg": "/Skipper-training-bouquet/static/media/curved10.fea9af7a14f5c725be3e.jpg",
-    "static/media/skipper-bg.jpg": "/Skipper-training-bouquet/static/media/skipper-bg.9b827e7ec687d439dbdf.jpg",
     "static/media/home-decor-3.jpg": "/Skipper-training-bouquet/static/media/home-decor-3.74d13fcbd3c631fc7908.jpg",
     "static/media/home-decor-2.jpg": "/Skipper-training-bouquet/static/media/home-decor-2.b4e5397c9846645ba275.jpg",
     "static/media/curved11.jpg": "/Skipper-training-bouquet/static/media/curved11.9a8331f4d454881d45c0.jpg",
@@ -17,6 +16,7 @@
     "static/media/curved6.jpg": "/Skipper-training-bouquet/static/media/curved6.a3404381623e4be7c97b.jpg",
     "static/media/curved0.jpg": "/Skipper-training-bouquet/static/media/curved0.d146ec6e9401aa9d52c5.jpg",
     "static/media/curved8.jpg": "/Skipper-training-bouquet/static/media/curved8.80b992f8e68f16e9d6e4.jpg",
+    "static/media/skipper.jpg": "/Skipper-training-bouquet/static/media/skipper.5c7f20a61957bf4c3334.jpg",
     "static/media/vr-bg.jpg": "/Skipper-training-bouquet/static/media/vr-bg.7afa879d8396a599757f.jpg",
     "static/media/curved14.jpg": "/Skipper-training-bouquet/static/media/curved14.12c9ea54425c4f1bc1d7.jpg",
     "static/media/d&g-skirt.jpeg": "/Skipper-training-bouquet/static/media/d&g-skirt.cf303ab83b3853aa4c11.jpeg",
@@ -86,6 +86,6 @@
   },
   "entrypoints": [
     "static/css/main.67ff39bc.css",
-    "static/js/main.2bedd1a9.js"
+    "static/js/main.11a99676.js"
   ]
 }
