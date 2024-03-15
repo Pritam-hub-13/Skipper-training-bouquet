@@ -100,7 +100,7 @@ function DataTables() {
               <SoftButton style={{
                 left: "24rem", color: "white", backgroundColor: "#004475"
               }} onClick={() => {
-                navigate("/schedule-trainings")
+                navigate("/transaction/schedule-trainings")
               }}>View Scheduled training</SoftButton>
             </SoftBox>
             <SoftBox p={3} lineHeight={1} style={{ width: "100%" }}>

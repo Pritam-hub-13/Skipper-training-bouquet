@@ -50,7 +50,7 @@ import NewUser from "layouts/pages/users/new-user";
 import PlantAdd from "layouts/pages/users/new-user/plant"
 import DepartmentAdd from "layouts/pages/users/new-user/department"
 import DesignationAdd from "layouts/pages/users/new-user/designation1"
-
+import Authmaster from "layouts/applications/Authorisation/Index"
 import Settings from "layouts/pages/account/settings";
 import Billing from "layouts/pages/account/billing";
 import Invoice from "layouts/pages/account/invoice";
@@ -101,7 +101,7 @@ import Error500 from "layouts/authentication/error/500";
 import Schedule from "layouts/applications/data-tables/Schedule/Index"
 // Soft UI Dashboard PRO React icons
 import Shop from "examples/Icons/Shop";
-// import Office from "examples/Icons/Office";
+import Office from "examples/Icons/Office";
 import SettingsIcon from "examples/Icons/Settings";
 import Basket from "examples/Icons/Basket";
 import Document from "examples/Icons/Document";
@@ -122,68 +122,92 @@ const routes = [
     component: <Default />,
     noCollapse: true
   },
+  { type: "title", title: "Master", key: "title-master" },
   {
     type: "collapse",
-    name: "Tarining Bouquet",
-    key: "training-bouquet",
+    name: "Master",
+    key: "master",
     icon: <Shop size="12px" />,
-    route: "/training-bouquet",
-    component: <DataTables />,
-    noCollapse: true
+    collapse: [
+      {
+        name: "Employee Master",
+        key: "employeemaster",
+        route: "/master/employeemaster",
+        component: <DataTables2 />,
+      },
+      {
+        name: "Department Master",
+        key: "departmentmaster",
+        route: "/master/departmentmaster",
+        component: <Departmentmaster />,
+      },
+      {
+        name: "Location Master",
+        key: "locationmaster",
+        route: "/master/locationmaster",
+        component: <PlantMaster />,
+      },
+      {
+        name: "Designation Master",
+        key: "designationmaster",
+        route: "/master/designationmaster",
+        component: <Designationmaster />,
+      },
+    ]
+
   },
+  { type: "title", title: "Transaction", key: "title-transaction" },
   {
     type: "collapse",
-    name: "Employee Master",
-    key: "employeeList",
+    name: "Transaction",
+    key: "transaction",
     icon: <Shop size="12px" />,
-    route: "/employeeList",
-    component: <DataTables2 />,
-    noCollapse: true
+    collapse: [
+      {
+        name: "Training Bouquet",
+        key: "training-bouquet",
+        route: "/transaction/training-bouquet",
+        component: < DataTables />,
+      },
+      {
+        name: "Training identification",
+        key: "training-identification",
+        route: "/transaction/training-identification",
+        component: <DataTables4 />,
+      }
+    ]
+
   },
+  { type: "title", title: "Report", key: "title-report" },
   {
     type: "collapse",
-    name: "User Master",
-    key: "userList",
+    name: "Report",
+    key: "report",
     icon: <Shop size="12px" />,
-    route: "/userList",
-    component: <DataTables3 />,
-    noCollapse: true
+    collapse: [
+    ]
+
   },
+  { type: "title", title: "Settings", key: "title-settings" },
   {
     type: "collapse",
-    name: "Plant Master",
-    key: "plantMaster",
+    name: "Settings",
+    key: "settings",
     icon: <Shop size="12px" />,
-    route: "/plantMaster",
-    component: <PlantMaster />,
-    noCollapse: true
-  },
-  {
-    type: "collapse",
-    name: "Training Identification",
-    key: "trainingidentification",
-    icon: <Shop size="12px" />,
-    route: "/trainingidentification",
-    component: <DataTables4 />,
-    noCollapse: true
-  },
-  {
-    type: "collapse",
-    name: "Department Master",
-    key: "departmentMaster",
-    icon: <Shop size="12px" />,
-    route: "/departmentMaster",
-    component: <Departmentmaster />,
-    noCollapse: true
-  },
-  {
-    type: "collapse",
-    name: "Designation Master",
-    key: "designationMaster",
-    icon: <Shop size="12px" />,
-    route: "/designationMaster",
-    component: <Designationmaster />,
-    noCollapse: true
+    collapse: [
+      {
+        name: "User Master",
+        key: "usermaster",
+        route: "/settings/usermaster",
+        component: <DataTables3 />,
+      },
+      {
+        name: "User Authorisation",
+        key: "user-authorisation",
+        route: "/settings/user-authorisation",
+        component: <Authmaster />,
+      },
+    ]
   },
   {
     name: "Create User",
@@ -221,7 +245,7 @@ const routes = [
   {
     name: "Schedule Traininglist",
     key: "scheduletraininglist",
-    route: "/schedule-trainings",
+    route: "/transaction/schedule-trainings",
     component: <ScheduleTrain />,
   },
   {
