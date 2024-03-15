@@ -31,7 +31,7 @@ import PageLayout from "examples/LayoutContainers/PageLayout";
 import pageRoutes from "page.routes";
 
 // Images
-import pattern from "assets/images/shapes/skipper-bg.jpg";
+import pattern from "assets/images/shapes/skipper.jpg";
 
 function IllustrationLayout({ color, header, title, description, illustration, children }) {
   return (
